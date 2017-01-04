@@ -112,3 +112,7 @@ allow zygote dalvikcache_data_file:{ dir file lnk_file } relabelto;
 allow zygote ota_data_file:dir rmdir;
 allow zygote ota_data_file:{ file lnk_file } unlink;
 
+
+# Themes
+allow zygote theme_data_file:file r_file_perms;
+allow zygote theme_data_file:dir r_dir_perms;
