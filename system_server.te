@@ -347,9 +347,6 @@ userdebug_or_eng(`set_prop(system_server, wifi_log_prop)')
 set_prop(system_server, ctl_default_prop)
 set_prop(system_server, ctl_bugreport_prop)
 
-# cppreopt property
-set_prop(system_server, cppreopt_prop)
-
 # theme property
 get_prop(system_server, theme_prop)
 
