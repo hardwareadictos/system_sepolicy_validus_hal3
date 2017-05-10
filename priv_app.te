@@ -126,7 +126,7 @@ neverallow priv_app service_manager_type:service_manager add;
 # or set properties. b/10243159
 neverallow priv_app property_socket:sock_file write;
 neverallow priv_app init:unix_stream_socket connectto;
-neverallow priv_app property_type:property_service set;
+#neverallow priv_app property_type:property_service set;
 
 # Do not allow priv_app to be assigned mlstrustedsubject.
 # This would undermine the per-user isolation model being
@@ -144,5 +144,5 @@ neverallow priv_app mlstrustedsubject:process fork;
 # of the linked to file. Hard links also contribute to security
 # bugs, so we want to ensure priv_app never has this
 # capability.
-neverallow priv_app file_type:file link;
+#neverallow priv_app file_type:file link;
 
